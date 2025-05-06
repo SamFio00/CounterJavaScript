@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to right, #181717, #7e7a76);
+}
+body .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.24);
+  width: 80%;
+  padding: 80px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  gap: 20px;
+}
+body .container h1 {
+  color: rgb(255, 255, 255);
+  font-size: 6rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+body .container .counter-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+body .container button {
+  padding: 10px 20px;
+  font-size: 5rem;
+  cursor: pointer;
+  background-color: rgb(177, 62, 62);
+  border: none;
+  border-radius: 8px;
+}
+body .container button:hover {
+  background-color: rgb(124.7302904564, 42.2697095436, 42.2697095436);
+  color: rgb(206.9087136929, 113.0912863071, 113.0912863071);
+}
+body .container .value {
+  font-size: 3rem;
+  color: rgb(255, 255, 255);
+  min-width: 60px;
+  text-align: center;
+}
+body .container ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+body .container ul li a {
+  color: #ffffff;
+  font-size: 2.6rem;
+}
+body .container ul li a:hover {
+  color: rgb(177, 62, 62);
+}
+body .container p {
+  color: rgb(255, 255, 255);
+  font-size: 0.9rem;
+}
+
+/*# sourceMappingURL=main.css.map */
