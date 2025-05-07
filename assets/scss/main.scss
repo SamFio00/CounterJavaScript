@@ -17,6 +17,7 @@ body {
   align-items: center;
   min-height: 100vh;
   background: linear-gradient(to left, #504c4c, #10af37);
+  overflow: hidden; 
 
   @media (max-width: 768px) {
     padding: 0;
