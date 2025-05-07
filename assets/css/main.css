@@ -11,7 +11,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: linear-gradient(to right, #181717, #7e7a76);
+  background: linear-gradient(to bottom, #181717, #865b30);
 }
 body .container {
   display: flex;
@@ -44,8 +44,8 @@ body .container button {
   border-radius: 8px;
 }
 body .container button:hover {
-  background-color: rgb(124.7302904564, 42.2697095436, 42.2697095436);
-  color: rgb(206.9087136929, 113.0912863071, 113.0912863071);
+  background-color: #7d2a2a;
+  color: #cf7171;
 }
 body .container .value {
   font-size: 3rem;
@@ -72,6 +72,4 @@ body .container ul li a:hover {
 body .container p {
   color: rgb(255, 255, 255);
   font-size: 0.9rem;
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
