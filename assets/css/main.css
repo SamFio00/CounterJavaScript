@@ -11,9 +11,16 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: linear-gradient(to left, #504c4c, #055318);
+  background: linear-gradient(to left, #504c4c, #10af37);
 }
-body .container {
+@media (max-width: 768px) {
+  body {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -26,17 +33,49 @@ body .container {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   gap: 20px;
 }
-body .container h1 {
+@media (max-width: 768px) {
+  .container {
+    width: 100vw;
+    height: 100vh;
+    padding: 20px;
+    border: none;
+    background: none;
+    box-shadow: none;
+    gap: 5px;
+  }
+}
+@media (max-width: 480px) {
+  .container {
+    padding: 10px;
+  }
+}
+.container h1 {
   color: rgb(255, 255, 255);
   font-size: 6rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
-body .container .counter-container {
+@media (max-width: 768px) {
+  .container h1 {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 480px) {
+  .container h1 {
+    font-size: 3rem;
+  }
+}
+.container .counter-container {
   display: flex;
   align-items: center;
   gap: 20px;
 }
-body .container button {
+@media (max-width: 768px) {
+  .container .counter-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+.container .counter-container button {
   padding: 10px 20px;
   font-size: 5rem;
   cursor: pointer;
@@ -46,21 +85,38 @@ body .container button {
   border-radius: 8px;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
-body .container button:hover {
+.container .counter-container button:hover {
   background-color: black;
   transform: translate(0, -2px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-body .container button:last-child {
+.container .counter-container button:last-child {
   background-color: rgb(62, 177, 100);
   color: rgb(255, 255, 255);
   font-size: 3rem;
 }
-body .container button:last-child:hover {
+.container .counter-container button:last-child:hover {
   background-color: black;
   color: rgb(62, 177, 100);
 }
-body .container .value {
+@media (max-width: 768px) {
+  .container .counter-container button {
+    font-size: 3.2rem;
+    padding: 5px 10px;
+  }
+  .container .counter-container button:last-child {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 480px) {
+  .container .counter-container button {
+    font-size: 2.8rem;
+  }
+  .container .counter-container button:last-child {
+    font-size: 2.2rem;
+  }
+}
+.container .counter-container .value {
   font-size: 3.6rem;
   padding: 30px 60px;
   background-color: rgba(0, 0, 0, 0.507);
@@ -70,7 +126,38 @@ body .container .value {
   min-width: 60px;
   text-align: center;
 }
-body .container ul {
+@media (max-width: 768px) {
+  .container .counter-container .value {
+    font-size: 2rem;
+    padding: 15px 30px;
+  }
+}
+@media (max-width: 480px) {
+  .container .counter-container .value {
+    font-size: 1.8rem;
+    padding: 12px 24px;
+  }
+}
+.container .toggle-music {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.container .toggle-music:hover {
+  transform: translate(0, -2px);
+}
+@media (max-width: 768px) {
+  .container .toggle-music {
+    font-size: 1.2rem;
+    padding: 8px 16px;
+  }
+}
+.container ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -79,34 +166,32 @@ body .container ul {
   align-items: center;
   gap: 20px;
 }
-body .container ul li a {
+@media (max-width: 768px) {
+  .container ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+  }
+}
+.container ul li a {
   color: #ffffff;
   font-size: 2.6rem;
 }
-body .container ul li a:hover {
+@media (max-width: 768px) {
+  .container ul li a {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 480px) {
+  .container ul li a {
+    font-size: 1.6rem;
+  }
+}
+.container ul li a:hover {
   color: rgb(62, 177, 100);
 }
-body .container p {
+.container p {
   color: rgb(255, 255, 255);
   font-size: 0.9rem;
-}
-
-.toggle-music {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.3rem;
-  color: rgb(255, 255, 255);
-  font-weight: bold;
-  border: 2px solid rgb(62, 177, 100);
-  background-color: rgba(0, 0, 0, 0.507);
-  padding: 10px 20px;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
-.toggle-music:hover {
-  background-color: black;
-  transform: translate(0, -2px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }/*# sourceMappingURL=main.css.map */

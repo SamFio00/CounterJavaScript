@@ -26,12 +26,15 @@ const goalSound = new Audio('assets/audio/goal.wav'); // Suono per il raggiungim
 const bgMusic = new Audio('assets/audio/bgmusic.mp3');
 bgMusic.loop = true; // Imposta la musica in loop
 bgMusic.volume = 0.2; // Imposta il volume della musica di sottofondo
-bgMusic.play();
 
 const toggleMusicBtn = document.createElement('button'); // Pulsante per attivare/disattivare la musica
 toggleMusicBtn.className = 'toggle-music';
-toggleMusicBtn.textContent = 'Click to play some chill music!';
+toggleMusicBtn.textContent = '🎶';
 document.body.appendChild(toggleMusicBtn);
+
+const ulElement = document.querySelector('ul'); // Seleziona l'elemento <ul> esistente
+
+container.parentNode.insertBefore(toggleMusicBtn, ulElement); // Inserisce il pulsante prima dell'elemento <ul>
 
 toggleMusicBtn.addEventListener('click', () => { // Funzione per attivare/disattivare la musica
   if (bgMusic.paused) {
