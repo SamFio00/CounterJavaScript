@@ -11,7 +11,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: linear-gradient(to left, #504c4c, #dfeef0);
+  background: linear-gradient(to left, #504c4c, #055318);
 }
 body .container {
   display: flex;
@@ -21,7 +21,7 @@ body .container {
   background-color: rgba(0, 0, 0, 0.24);
   width: 80%;
   padding: 80px;
-  border: 2px solid rgb(177, 62, 62);
+  border: 2px solid rgb(62, 177, 100);
   border-radius: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   gap: 20px;
@@ -41,21 +41,30 @@ body .container button {
   font-size: 5rem;
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0.507);
-  color: rgb(177, 62, 62);
-  border: 2px solid rgb(177, 62, 62);
+  color: rgb(62, 177, 100);
+  border: 2px solid rgb(62, 177, 100);
   border-radius: 8px;
-  transform: ease-in-out 0.2s;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 body .container button:hover {
   background-color: black;
   transform: translate(0, -2px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+body .container button:last-child {
+  background-color: rgb(62, 177, 100);
+  color: rgb(255, 255, 255);
+  font-size: 3rem;
+}
+body .container button:last-child:hover {
+  background-color: black;
+  color: rgb(62, 177, 100);
+}
 body .container .value {
   font-size: 3.6rem;
   padding: 30px 60px;
   background-color: rgba(0, 0, 0, 0.507);
-  border: 2px solid rgb(177, 62, 62);
+  border: 2px solid rgb(62, 177, 100);
   border-radius: 8px;
   color: rgb(255, 255, 255);
   min-width: 60px;
@@ -75,9 +84,29 @@ body .container ul li a {
   font-size: 2.6rem;
 }
 body .container ul li a:hover {
-  color: rgb(177, 62, 62);
+  color: rgb(62, 177, 100);
 }
 body .container p {
   color: rgb(255, 255, 255);
   font-size: 0.9rem;
+}
+
+.toggle-music {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  border: 2px solid rgb(62, 177, 100);
+  background-color: rgba(0, 0, 0, 0.507);
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.toggle-music:hover {
+  background-color: black;
+  transform: translate(0, -2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }/*# sourceMappingURL=main.css.map */
