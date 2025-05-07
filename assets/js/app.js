@@ -1,3 +1,4 @@
+// 1. Creazione degli elementi
 const container = document.getElementById('counterContainer');
 
 const minusButton = document.createElement('button');

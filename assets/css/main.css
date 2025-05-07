@@ -11,7 +11,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: linear-gradient(to bottom, #181717, #865b30);
+  background: linear-gradient(to left, #504c4c, #dfeef0);
 }
 body .container {
   display: flex;
@@ -21,6 +21,7 @@ body .container {
   background-color: rgba(0, 0, 0, 0.24);
   width: 80%;
   padding: 80px;
+  border: 2px solid rgb(177, 62, 62);
   border-radius: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   gap: 20px;
@@ -39,16 +40,23 @@ body .container button {
   padding: 10px 20px;
   font-size: 5rem;
   cursor: pointer;
-  background-color: rgb(177, 62, 62);
-  border: none;
+  background-color: rgba(0, 0, 0, 0.507);
+  color: rgb(177, 62, 62);
+  border: 2px solid rgb(177, 62, 62);
   border-radius: 8px;
+  transform: ease-in-out 0.2s;
 }
 body .container button:hover {
-  background-color: #7d2a2a;
-  color: #cf7171;
+  background-color: black;
+  transform: translate(0, -2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 body .container .value {
-  font-size: 3rem;
+  font-size: 3.6rem;
+  padding: 30px 60px;
+  background-color: rgba(0, 0, 0, 0.507);
+  border: 2px solid rgb(177, 62, 62);
+  border-radius: 8px;
   color: rgb(255, 255, 255);
   min-width: 60px;
   text-align: center;

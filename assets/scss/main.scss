@@ -1,6 +1,6 @@
 
 $text-color: rgb(255, 255, 255);
-$accent-color: #c24b4b;
+$accent-color: rgb(177, 62, 62);
 
 
 * {
@@ -16,7 +16,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient(to bottom, #181717, #865b30);
+    background: linear-gradient(to left, #504c4c, #dfeef0);
 
     .container {
         display: flex;
@@ -26,6 +26,7 @@ body {
         background-color: rgba(0, 0, 0, 0.24);
         width: 80%;
         padding: 80px;
+        border: 2px solid $accent-color;
         border-radius: 20px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         gap: 20px;
@@ -46,18 +47,25 @@ body {
             padding: 10px 20px;
             font-size: 5rem;
             cursor: pointer;
-            background-color: rgb(177, 62, 62);
-            border: none;
+            background-color: rgba(0, 0, 0, 0.507);
+            color: $accent-color;
+            border: 2px solid $accent-color;
             border-radius: 8px;
+            transform: ease-in-out 0.2s;
 
             &:hover {
-              background-color: darken($accent-color, 20%);
-              color: lighten($accent-color, 10%);
+              background-color: black;
+              transform: translate(0, -2px);
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             }
           }
       
           .value {
-            font-size: 3rem;
+            font-size: 3.6rem;
+            padding: 30px 60px;
+            background-color: rgba(0, 0, 0, 0.507);
+            border: 2px solid $accent-color;
+            border-radius: 8px;
             color: $text-color;
             min-width: 60px;
             text-align: center;
@@ -80,7 +88,7 @@ body {
               }
       
               a:hover {
-                color: rgb(177, 62, 62);
+                color: $accent-color;
               }
             }
           }
